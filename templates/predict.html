@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<h1>Prediction</h1>
+{% endblock %}
+
+{% block body %}
+
+{% if prediction == [0] %}
+<h3>No, your child has not smoked before.</h3>
+{% else %}
+<h3>Yes, your child has smoked before.</h3>
+{% endif %}
+
+<br><br><br>
+
+<a href="/" class="button">Go Back</a>
+
+{% endblock %}
